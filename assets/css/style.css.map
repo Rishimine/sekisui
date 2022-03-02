@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,SAAS,EAAE,IAAI;CAClB;;ACFD,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,MAAM;CAChB",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/_moriki.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
