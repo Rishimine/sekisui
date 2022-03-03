@@ -1,5 +1,33 @@
 .header {
-  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header #logo {
+  max-width: 50%;
+  padding: 10px 30px;
+}
+
+.navi-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navi-ul li {
+  list-style: none;
+  padding: 15px 15px;
+}
+
+.navi-ul li a {
+  text-decoration: none;
 }
 
 .aho {
