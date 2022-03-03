@@ -5,36 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Sekisui</title>
 </head>
 
 <body>
     <main>
         <section id="exsample">
             <h2>施工事例</h2>
-            <div class="house">
-                <img src="./assets/img/yamaguchi.webp" alt="">
-                <p>M様邸新築工事</p>
-                <p>山口県</p>
-                <img src="./assets/img/kyoto.webp" alt="">
-                <p>ザ・リッツ・カールトン京都</p>
-                <p>京都府</p>
+            <div class="case">
+                <div class="house">
+                    <img src="./assets/img/yamaguchi.webp" alt="" class="house_pic">
+                    <h3 class="case_content">M様邸新築工事</h3>
+                    <p>山口県</p>
+                    <a href="#" class="case_content_btn">
+                        <img src="./assets/img/more.png" alt="">
+                    </a>
+                </div>
+                <div class="hotel">
+                    <img src="./assets/img/kyoto.webp" alt="" class="hotel_pic
+                    ">
+                    <h3 class="case_content">ザ・リッツ・カールトン京都</h3>
+                    <p>京都府</p>
+                    <a href="#" class="case_content_btn">
+                        <img src="./assets/img/more.png" alt="">
+                    </a>
+                </div>
+
             </div>
-            <div>施工実績一覧</div>
+            <p class="case_btn">
+                <a href="#">施工実績一覧</a>
+            </p>
             <div class="links">
-                <a href="#">
+                <a href="#" class="link_img">
                     <img src="./assets/img/grandfront.webp" alt="企業理念">
                 </a>
-                <a href="#">
+                <a href="#" class="link_img">
                     <img src="./assets/img/midtown.webp" alt="採用情報">
                 </a>
-                <a href="#">
+                <a href="#" class="link_img">
                     <img src="./assets/img/wosaka.webp" alt="お問合せ">
                 </a>
 
 
             </div>
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-nav">
+                        <p>
+                            <a href="#">
+                                <img src="./assets/img/logo_white.webp" alt="積水ハウス" class="footer-logo">
+                            </a>
+                        </p>
+                        <nav class="footer-nav_list">
+                            <ul>
+                                <li>企業理念</li>
+                                <li>施工事例</li>
+                                <li>採用情報</li>
+                                <li>お問合せ</li>
+                            </ul>
+                        </nav>
+                        <p class="copyright">Copyright　<small>&copy;</small>Rina & Kae</p>
+                    </div>
+                </div>
+
+            </footer>
         </section>
     </main>
 
