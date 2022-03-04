@@ -204,13 +204,16 @@
     padding-top: 50px;
     flex-direction: column-reverse;
     }
+
+    ul{
+        flex-direction: column;
+        li{
+            padding-bottom: 30px;
+            
+        }
+    }
+    
+
 }
 
-ul{
-    flex-direction: column;
-    li{
-        padding-bottom: 30px;
-        
-    }
-}
 
