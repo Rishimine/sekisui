@@ -178,5 +178,38 @@ height: 90vh;
 }
 
 // ---レスポンシブーーー
+@media screen and (max-width:780px){
+  
+
+
+    #title{
+        font-size: 30px;
+    }
+    // --news---
+    .news-section{
+        h2{
+            font-size: 25px;
+            padding: 10px;
+        }
+    }
+
+
+        a{
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+            text-align: center;
+            padding: 5px;
+            margin: 0;
+           
+           span{
+            font-size: 13px;
+            padding: 5px;
+            margin: 0;
+            
+           }
+        }
+    
+}
 
 
