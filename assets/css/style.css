@@ -448,6 +448,10 @@ ul li {
     font-size: 25px;
     padding: 10px;
   }
+  .news-ul {
+    padding: 5px;
+    margin: 5px;
+  }
   a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -458,13 +462,9 @@ ul li {
             flex-direction: column;
     font-size: 10px;
     text-align: center;
-    padding: 5px;
-    margin: 0;
   }
   a span {
     font-size: 13px;
-    padding: 5px;
-    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
