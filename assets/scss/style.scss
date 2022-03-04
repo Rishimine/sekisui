@@ -1,59 +1,63 @@
 @import'./moriki';
 // // ---ハンバーガーーーー
-// @mixin sp {
-//     @media screen and (max-width: 780px) {
-//         @content;
-//     }
-// }
+#wrap{
+    display: none;
+}
+@mixin sp {
+    @media screen and (max-width: 780px) {
+        @content;
+    }
+}
 
 
-// .hamburger{
-//     @include sp{
-//         width: 30px;
-//         height: 30px;
+.hamburger{
 
-//         .pate,
-//         .pate::before,
-//         .pate::after{
-//             width: 100%;
-//             height: 5px;
-//             display: block;
-//             background-color: rosybrown;
-//             border-radius: 2px;
-//             transition: all .5s ease;
-//         }
+    @include sp{
+        width: 30px;
+        height: 30px;
 
-//         .pate{
-//             position: relative;
-//             top: calc(50% - 2px);
+        .pate,
+        .pate::before,
+        .pate::after{
+            width: 100%;
+            height: 5px;
+            display: block;
+            background-color: rosybrown;
+            border-radius: 2px;
+            transition: all .5s ease;
+        }
 
-//             &::before,
-//             &::after{
-//                 content: '';
-//                 position: absolute;
-//             }
+        .pate{
+            position: relative;
+            top: calc(50% - 2px);
 
-//             &::before{
-//                 top: -9px;
-//             }
-//             &::after{
-//                 top: 9px;
-//             }
-//         } 
-//      }
-// }
-// #wrap:checked + .hamburger .pate{
-//     @include sp{
-//         background-color: transparent;
-//         &::before{
-//             transform: rotate(45deg) translate(5px,5px);
-//         }
+            &::before,
+            &::after{
+                content: '';
+                position: absolute;
+            }
 
-//         &::after{
-//             transform: rotate(-45deg) translate(7px,-8px);
-//         }
-//     }
-// }
+            &::before{
+                top: -9px;
+            }
+            &::after{
+                top: 9px;
+            }
+        } 
+     }
+}
+#wrap:checked + .hamburger .pate{
+    @include sp{
+        background-color: transparent;
+        &::before{
+            transform: rotate(45deg) translate(5px,5px);
+        }
+
+        &::after{
+            transform: rotate(-45deg) translate(7px,-8px);
+        }
+    }
+}
 
 
 // ---top bg---
@@ -173,4 +177,5 @@ height: 90vh;
     }
 }
 
+// ---レスポンシブーーー
 
