@@ -1,5 +1,8 @@
 @import'./moriki';
-// ---ハンバーガーーーー
+// // ---ハンバーガーーーー
+#wrap{
+    display: none;
+}
 @mixin sp {
     @media screen and (max-width: 780px) {
         @content;
@@ -8,6 +11,7 @@
 
 
 .hamburger{
+
     @include sp{
         width: 30px;
         height: 30px;
@@ -72,6 +76,7 @@ height: 90vh;
 .header{
    display: flex;
    justify-content: space-between;
+   padding: 20px;
 
     #logo{
         max-width: 50%;
@@ -106,13 +111,17 @@ height: 90vh;
 .main-title{
     display: flex;
     justify-content: center;
-    color: black;
+    align-items: center;
+    color: white;
     font-size: 70px;
+    height: calc(90vh - 108px);;
     font-family: 'Dancing Script', cursive;
- font-family: 'Luxurious Roman', cursive;
- font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Luxurious Roman', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+ 
  #title{
      display: none;
+     text-shadow:1px 1px 3px;
  }
 
 }
@@ -144,9 +153,9 @@ height: 90vh;
         
         a{
             text-decoration: none;
-            color: white;
+            color: black;
             &:hover{
-                color: blue;
+                color: red;
 
         }
         .news-border{
@@ -159,11 +168,15 @@ height: 90vh;
         span{
             padding: 25px;
             margin: 10px;
-            color: white;
+            color: black;
             &:hover{
-                color: blue;
+                color: red;
         }
     }
-  }
- }
 }
+    }
+}
+
+// ---レスポンシブーーー
+
+
