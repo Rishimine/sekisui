@@ -127,9 +127,14 @@
     p{
         color: white;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
         font-family: 'Dancing Script', cursive;
         font-family: 'Luxurious Roman', cursive;
         font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+}
+@media screen and (max-width:780px){
+    .case{
+        flex-direction: column-reverse;
     }
 }
