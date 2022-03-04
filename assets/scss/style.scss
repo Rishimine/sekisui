@@ -97,7 +97,7 @@ height: 90vh;
                 text-decoration: none;
                 color: white;
                 &:hover{
-                    color: coral;
+                    color: blue;
                 }
             }
        }
@@ -144,6 +144,10 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
         
         a{
             text-decoration: none;
+            color: white;
+            &:hover{
+                color: blue;
+
         }
         .news-border{
             display: inline-block;
@@ -155,14 +159,9 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
         span{
             padding: 25px;
             margin: 10px;
-
         }
     }
 }
-
-
-
-
 
 
 
