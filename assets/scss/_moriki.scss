@@ -106,7 +106,6 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    margin-bottom: 60px;
 }
 
 .footer-logo{
@@ -122,8 +121,10 @@
 }
 
 .copyright {
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    padding-bottom: 10px;
+    background-color: black;
+    p{
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
 }
