@@ -6,6 +6,7 @@
 @mixin sp {
     @media screen and (max-width: 780px) {
         @content;
+      
     }
 }
 
@@ -193,19 +194,23 @@ height: 90vh;
         }
     }
 
+    .news-ul{
+        padding: 5px;
+        margin: 5px;
+    }
 
         a{
             display: flex;
             flex-direction: column;
             font-size: 10px;
             text-align: center;
-            padding: 5px;
-            margin: 0;
+            // padding: 5px;
+            // margin: 0;
            
            span{
             font-size: 13px;
-            padding: 5px;
-            margin: 0;
+            // padding: 5px;
+            // margin: 0;
             
            }
         }
