@@ -1,4 +1,4 @@
-main {
+#main {
   background-image: url("../img/jutaku-pct-renovation01.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,6 +37,7 @@ main {
 .navi-ul li {
   list-style: none;
   padding: 15px 30px;
+  color: white;
 }
 
 .navi-ul li a {
@@ -55,6 +56,10 @@ main {
   font-family: 'Dancing Script', cursive;
   font-family: 'Luxurious Roman', cursive;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.main-title #title {
+  display: none;
 }
 
 .news-section {

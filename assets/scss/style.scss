@@ -1,7 +1,7 @@
 
 // ---top bg---
 
-main{
+#main{
 background-image: url('../img/jutaku-pct-renovation01.jpeg');
 background-size: cover;
 background-repeat: no-repeat;
@@ -31,10 +31,12 @@ height: 90vh;
  font-family: 'Luxurious Roman', cursive;
  font-family: 'M PLUS Rounded 1c', sans-serif;
  
+ 
     
        li{
             list-style: none;
             padding: 15px 30px;
+            color: white;
             a{
                 text-decoration: none;
             }
@@ -49,7 +51,9 @@ height: 90vh;
     font-family: 'Dancing Script', cursive;
  font-family: 'Luxurious Roman', cursive;
  font-family: 'M PLUS Rounded 1c', sans-serif;
- 
+ #title{
+     display: none;
+ }
 
 }
 

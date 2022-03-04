@@ -1,4 +1,5 @@
 $(function(){
-$('#title').feedIn(1500);
+
+$('#title').fadeIn(1500);
 
 });
