@@ -1,3 +1,158 @@
+#exsample {
+  padding: 90px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#exsample h2 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 90px;
+}
+
+.case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.case .house {
+  width: 50%;
+  text-align: center;
+}
+
+.case .house_pic {
+  width: 430px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.case p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.case .case_content_btn {
+  display: block;
+  margin-top: 15px;
+}
+
+.case img {
+  width: 300px;
+}
+
+.hotel {
+  width: 50%;
+  text-align: center;
+}
+
+.hotel .hotel_pic {
+  width: 430px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.hotel p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.hotel .case_content_btn {
+  display: block;
+  margin-top: 15px;
+}
+
+.hotel img {
+  width: 300px;
+}
+
+.case_btn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.case_btn a {
+  text-decoration: none;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 12px 40px;
+  color: #000;
+  font-size: 20px;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 90px;
+}
+
+.links .link_img {
+  display: block;
+  width: calc(100%/3);
+  position: relative;
+}
+
+.links .link_img p {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+
+.links .link_img img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer .footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-nav_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav_list ul li {
+  margin: 0 30px;
+  color: white;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 #main {
   background-image: url("../img/jutaku-pct-renovation01.jpeg");
   background-size: cover;
@@ -113,148 +268,5 @@
 .news-ul li span {
   padding: 25px;
   margin: 10px;
-}
-
-#exsample {
-  padding: 90px 0;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-#exsample h2 {
-  text-align: center;
-  font-size: 38px;
-  margin-bottom: 90px;
-}
-
-.case {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.case .house {
-  width: 50%;
-  text-align: center;
-}
-
-.case .house_pic {
-  width: 430px;
-  height: 280px;
-  margin: 0 auto;
-}
-
-.case p {
-  font-size: 14px;
-  margin-top: 15px;
-}
-
-.case .case_content_btn {
-  display: block;
-  margin-top: 15px;
-}
-
-.case img {
-  width: 300px;
-}
-
-.hotel {
-  width: 50%;
-  text-align: center;
-}
-
-.hotel .hotel_pic {
-  width: 430px;
-  height: 280px;
-  margin: 0 auto;
-}
-
-.hotel p {
-  font-size: 14px;
-  margin-top: 15px;
-}
-
-.hotel .case_content_btn {
-  display: block;
-  margin-top: 15px;
-}
-
-.hotel img {
-  width: 300px;
-}
-
-.case_btn {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.case_btn a {
-  text-decoration: none;
-  border: 1px solid #000;
-  display: inline-block;
-  padding: 12px 40px;
-  color: #000;
-  font-size: 20px;
-}
-
-.links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 90px;
-}
-
-.links .link_img {
-  display: block;
-  width: calc(100%/3);
-}
-
-.links .link_img img {
-  width: 100%;
-}
-
-.footer {
-  background-color: #000;
-}
-
-.footer .footer-content {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 30px;
-  margin-bottom: 60px;
-}
-
-.footer-logo {
-  height: 40px;
-}
-
-.footer-nav_list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-nav_list ul li {
-  margin: 0 30px;
-  color: white;
-}
-
-.copyright {
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
