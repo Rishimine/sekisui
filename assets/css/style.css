@@ -173,8 +173,7 @@
     text-align: center;
   }
   .case .house_pic {
-    width: 430px;
-    height: 280px;
+    max-width: 700px;
     margin: 0 auto;
   }
   .case p {
@@ -193,8 +192,7 @@
     text-align: center;
   }
   .hotel .hotel_pic {
-    width: 430px;
-    height: 280px;
+    max-width: 700px;
     margin: 0 auto;
   }
   .hotel p {
@@ -220,6 +218,39 @@
     color: #000;
     font-size: 10px;
   }
+  .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links .link_img {
+    width: 80%;
+  }
+  .footer-nav {
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.footer-nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+ul li {
+  padding-bottom: 30px;
 }
 
 #wrap {

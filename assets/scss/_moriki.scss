@@ -133,6 +133,9 @@
         font-family: 'M PLUS Rounded 1c', sans-serif;
     }
 }
+
+
+
 @media screen and (max-width:780px){
     .case{
         flex-direction: column-reverse;
@@ -141,9 +144,9 @@
             text-align: center;
         }
         .house_pic{
-            width: 430px;
-            height: 280px;
+            max-width: 700px;
             margin: 0 auto;
+ 
         }
     
         p{
@@ -164,8 +167,7 @@
         width: 80%;
         text-align: center;
         .hotel_pic{
-            width: 430px;
-            height: 280px;
+            max-width: 700px;
             margin: 0 auto;
         }
         p{
@@ -192,6 +194,29 @@
             color: #000;
             font-size: 10px;
         }
+    }
 
+    .links{
+        flex-direction: column;
+        .link_img{
+            width: 80%;
+        }
+    }
+
+.footer-nav{
+    padding-top: 50px;
+    flex-direction: column-reverse;
     }
 }
+
+.footer-nav_list{
+    display: flex;
+}
+ul{
+    flex-direction: column;
+    li{
+        padding-bottom: 30px;
+        
+    }
+}
+
