@@ -152,6 +152,52 @@
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 780px) {
+  .hamburger {
+    width: 30px;
+    height: 30px;
+  }
+  .hamburger .pate,
+  .hamburger .pate::before,
+  .hamburger .pate::after {
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: rosybrown;
+    border-radius: 2px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .hamburger .pate {
+    position: relative;
+    top: calc(50% - 2px);
+  }
+  .hamburger .pate::before, .hamburger .pate::after {
+    content: '';
+    position: absolute;
+  }
+  .hamburger .pate::before {
+    top: -9px;
+  }
+  .hamburger .pate::after {
+    top: 9px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #wrap:checked + .hamburger .pate {
+    background-color: transparent;
+  }
+  #wrap:checked + .hamburger .pate::before {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(5px, 5px);
+  }
+  #wrap:checked + .hamburger .pate::after {
+    -webkit-transform: rotate(-45deg) translate(7px, -8px);
+            transform: rotate(-45deg) translate(7px, -8px);
+  }
+}
+
 #main {
   background-image: url("../img/jutaku-pct-renovation01.jpeg");
   background-size: cover;
@@ -191,11 +237,15 @@
 .navi-ul li {
   list-style: none;
   padding: 15px 30px;
-  color: white;
 }
 
 .navi-ul li a {
   text-decoration: none;
+  color: white;
+}
+
+.navi-ul li a:hover {
+  color: coral;
 }
 
 .main-title {

@@ -1,49 +1,58 @@
 @import'./moriki';
 // ---ハンバーガーーーー
-.hamburger{
-    width: 30px;
-    height: 30px;
-
-    .pate,
-    .pate::before,
-    .pate::after{
-        width: 100%;
-        height: 5px;
-        display: block;
-        background-color: rosybrown;
-        border-radius: 2px;
-        transition: all .5s ease;
-    }
-
-    .pate{
-        @extend.pate;
-        position: relative;
-        top: calc(50% - 2px);
-
-        &::before,
-        &::after{
-            content: '';
-            position: absolute;
-        }
-
-        &::before{
-            top: -9px;
-        }
-        &::after{
-            top: 9px;
-        }
+@mixin sp {
+    @media screen and (max-width: 780px) {
+        @content;
     }
 }
+
+
+.hamburger{
+    @include sp{
+        width: 30px;
+        height: 30px;
+
+        .pate,
+        .pate::before,
+        .pate::after{
+            width: 100%;
+            height: 5px;
+            display: block;
+            background-color: rosybrown;
+            border-radius: 2px;
+            transition: all .5s ease;
+        }
+
+        .pate{
+            position: relative;
+            top: calc(50% - 2px);
+
+            &::before,
+            &::after{
+                content: '';
+                position: absolute;
+            }
+
+            &::before{
+                top: -9px;
+            }
+            &::after{
+                top: 9px;
+            }
+        } 
+     }
+}
 #wrap:checked + .hamburger .pate{
-    background-color: transparent;
+    @include sp{
+        background-color: transparent;
+        &::before{
+            transform: rotate(45deg) translate(5px,5px);
+        }
 
-     &::before{
-         transform: rotate(45deg) translate(5px,5px);
-     }
-
-     &::after{
-         transform: rotate(-45deg) translate(7px,-8px);
-     }
+        &::after{
+            transform: rotate(-45deg) translate(7px,-8px);
+        }
+    }
 }
 
 
@@ -84,9 +93,12 @@ height: 90vh;
        li{
             list-style: none;
             padding: 15px 30px;
-            color: white;
             a{
                 text-decoration: none;
+                color: white;
+                &:hover{
+                    color: coral;
+                }
             }
        }
 }
