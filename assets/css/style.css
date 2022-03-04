@@ -170,10 +170,9 @@
   }
   .case .house {
     width: 80%;
-    text-align: center;
   }
   .case .house_pic {
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .case p {
@@ -189,10 +188,9 @@
   }
   .hotel {
     width: 80%;
-    text-align: center;
   }
   .hotel .hotel_pic {
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .hotel p {
@@ -234,12 +232,6 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-}
-
-.footer-nav_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 ul {
