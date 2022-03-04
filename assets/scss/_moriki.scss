@@ -136,5 +136,62 @@
 @media screen and (max-width:780px){
     .case{
         flex-direction: column-reverse;
+        .house{
+            width: 80%;
+            text-align: center;
+        }
+        .house_pic{
+            width: 430px;
+            height: 280px;
+            margin: 0 auto;
+        }
+    
+        p{
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .case_content_btn{
+            display: block;
+            margin-top: 15px;
+        }
+        img{
+            width: 100%;
+        }
+
+    }
+
+    .hotel{
+        width: 80%;
+        text-align: center;
+        .hotel_pic{
+            width: 430px;
+            height: 280px;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .case_content_btn{
+            display: block;
+            margin-top: 15px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    .case_btn{
+        text-align: center;
+        margin-top: 50px;
+        a{
+            text-decoration: none;
+            border: 1px solid #000;
+            display: inline-block;
+            padding: 12px 40px;
+            color: #000;
+            font-size: 10px;
+        }
+
     }
 }
