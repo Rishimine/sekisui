@@ -10,6 +10,12 @@
     }
 }
 
+.header-right{
+    @include sp{
+        display: none;
+    }
+}
+
 
 .hamburger{
 
@@ -58,6 +64,13 @@
             transform: rotate(-45deg) translate(7px,-8px);
         }
     }
+}
+
+#wrap:checked ~ .header-right{
+    @include sp{
+        display: block;
+    }
+    
 }
 
 

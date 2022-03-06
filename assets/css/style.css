@@ -167,6 +167,9 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .case .house {
     width: 80%;
@@ -221,6 +224,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .links .link_img {
     width: 80%;
@@ -232,21 +238,25 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-}
-
-ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-ul li {
-  padding-bottom: 30px;
+  ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul li {
+    padding-bottom: 30px;
+  }
 }
 
 #wrap {
   display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .header-right {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -292,6 +302,12 @@ ul li {
   #wrap:checked + .hamburger .pate::after {
     -webkit-transform: rotate(-45deg) translate(7px, -8px);
             transform: rotate(-45deg) translate(7px, -8px);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #wrap:checked ~ .header-right {
+    display: block;
   }
 }
 
